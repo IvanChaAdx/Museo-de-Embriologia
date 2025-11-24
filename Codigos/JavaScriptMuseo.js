@@ -202,6 +202,7 @@ startBtn.addEventListener('click', () => {
     model.setAttribute('gltf-model', 'Modelos y animaciones/Testiculofinal.glb');
     model.setAttribute('scale', '0.05 0.05 0.05');
     model.setAttribute('rotation', '0 0 0');
+    hitbox.setAttribute('gesture-handler', '');
 
 model.addEventListener('model-loaded', () => {
     const object3D = model.getObject3D('mesh');
@@ -243,6 +244,7 @@ exitBtn.addEventListener('click', () => {
         setTimeout(() => { window.location.reload(); }, 300); /*Este script es el que hace que vuelva a la página principal*/
   });
   
+
 
 
 
